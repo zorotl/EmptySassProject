@@ -1,0 +1,55 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+/// COLORS
+/// PRIMARY
+$color-primary: #55c57a;
+$color-primary-light: lighten($color-primary, 10);
+$color-primary-lighter: lighten($color-primary, 20);
+$color-primary-dark: darken($color-primary, 10);
+$color-primary-darker: darken($color-primary, 20);
+/// SECONDARY
+$color-secondary: #4269ff;
+$color-secondary-light: lighten($color-secondary, 10);
+$color-secondary-lighter: lighten($color-secondary, 20);
+$color-secondary-dark: darken($color-secondary, 10);
+$color-secondary-darker: darken($color-secondary, 20);
+/// TERTIARY
+$color-tertiary: #ff9915;
+$color-tertiary-light: lighten($color-tertiary, 10);
+$color-tertiary-lighter: lighten($color-tertiary, 20);
+$color-tertiary-dark: darken($color-tertiary, 10);
+$color-tertiary-darker: darken($color-tertiary, 20);
+/// Black to White
+$color-black: #000;
+$color-grey-111: #111;
+$color-grey-333: #333;
+$color-grey-555: #555;
+$color-grey-777: #777;
+$color-grey-999: #999;
+$color-grey-aaa: #aaa;
+$color-grey-ccc: #ccc;
+$color-grey-eee: #eee;
+$color-grey-f7f7f7: #f7f7f7;
+$color-white: #fff;
+
+
+/// FONT
+$default-font: 'Roboto', 'Helvetica', 'Verdana', 'Arial', sans-serif !default;        // standard font
+$default-font-title: 'Merriweather', 'Georgia', 'Times New Roman', serif !default;    // font for h-tags
+$default-font-size: 1.6rem;
+$default-font-color: $color-grey-111;
+
+
+/// Container's maximum width
+$max-width: 1180px !default;
+
+
+/// GRID
+$grid-width: 114rem;
+$gutter-vertical: 8rem;
+$gutter-horizontal: 6rem;
+
+
+

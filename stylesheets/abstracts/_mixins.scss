@@ -1,0 +1,54 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+/// Clearfix
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+/// Centering Elements - Beispiel
+//  .foo {
+//    @include center(both);
+//  }
+//  .foo-parent {
+//    position: relative;
+//  }
+@mixin center-absolute($position: both) {
+  position: absolute;
+
+  @if $position == 'v' {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+  @else if $position == 'h' {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+  }
+  @else if $position == 'both' {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+/// Center a block-element
+@mixin center-block($my: 0, $mx: auto) {
+  display: block;
+  margin: $my $mx;
+}
+
+/* Transition mixin */
+@mixin transition($transition: all linear 0.3s) {
+  transition: $transition;
+}

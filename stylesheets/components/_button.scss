@@ -1,0 +1,75 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the button component.
+// -----------------------------------------------------------------------------
+
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    border-radius: 1rem;
+    position: relative;
+    font-size: $default-font-size;
+    @include transition(all .15s);
+
+    // Change for the <button> element
+    border: none;
+    cursor: pointer;
+  }
+
+  &:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba($color-black, .2);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    transform: translateY(-1px);
+    box-shadow: 0 .5rem 1rem rgba($color-black, .2);
+  }
+
+  &--primary {
+    background-color: $color-primary;
+    color: $color-grey-f7f7f7;
+
+    &::after {
+      background-color: $color-primary;
+    }
+  }
+
+  &--secondary {
+    background-color: $color-secondary;
+    color: $color-grey-f7f7f7;
+
+    &::after {
+      background-color: $color-secondary;
+    }
+  }
+
+  &--tertiary {
+    background-color: $color-tertiary;
+    color: $color-grey-f7f7f7;
+
+    &::after {
+      background-color: $color-tertiary;
+    }
+  }
+
+  &--white {
+    background-color: $color-white;
+    color: $color-grey-555;
+
+    &::after {
+      background-color: $color-white;
+    }
+  }
+}
