@@ -4,8 +4,8 @@
   "description": "set_a_website_description",
   "main": "index.js",
   "scripts": {
-    "dev": "sass stylesheets/main.scss stylesheets/style.css",
-    "watch": "sass stylesheets/main.scss stylesheets/style.css -w"
+    "dev": "sass scss/main.scss css/style.css",
+    "watch": "sass scss/main.scss css/style.css -w"
   },
   "author": "Martin Striednig",
   "license": "ISC",
